@@ -10,14 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1ce23d5-e9bc-46d3-82cb-3e9db6229899" name="Default Changelist" comment="delete sqflite package">
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+    <list default="true" id="f1ce23d5-e9bc-46d3-82cb-3e9db6229899" name="Default Changelist" comment="rename factory">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/database_migration_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/database_migration_service.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +78,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615186475263</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="rename package name to xulu_sql_migration_service">
+      <created>1615187136277</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615187136277</updated>
+    </task>
+    <task id="LOCAL-00005" summary="rename factory">
+      <created>1615187305205</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615187305205</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -97,11 +105,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial release" />
     <MESSAGE value="delete sqflite package" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete sqflite package" />
+    <MESSAGE value="rename package name to xulu_sql_migration_service" />
+    <MESSAGE value="rename factory" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename factory" />
   </component>
 </project>

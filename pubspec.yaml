@@ -13,8 +13,7 @@ dependencies:
   # null safety
   flutter_secure_storage: ^4.0.0
 
-  # null safety
-  get_it: ^6.0.0
+  get_it: ^5.0.6
 
 dev_dependencies:
   flutter_test:
