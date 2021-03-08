@@ -1,5 +1,4 @@
 import 'package:flutter/foundation.dart';
-import 'package:sqflite/sqflite.dart';
 import 'package:sqflite_migration_service/src/asset_reader.dart';
 import 'package:sqflite_migration_service/src/exceptions/sql_migration_exception.dart';
 import 'package:sqflite_migration_service/src/shared_preferences_service.dart';
@@ -17,13 +16,11 @@ class DatabaseMigrationService {
   bool _setupComplete = false;
 
   @visibleForTesting
-  List<String> getMigrationQueriesFromScript(String scriptContent,
-      {String fileName}) {
+  List<String> getMigrationQueriesFromScript(String scriptContent, {String fileName}) {
     try {
       return scriptContent
           .split(';')
-          .map((queryMultiLine) =>
-              queryMultiLine.split('\n').map((e) => e.trim()).toList().join(''))
+          .map((queryMultiLine) => queryMultiLine.split('\n').map((e) => e.trim()).toList().join(''))
           .where((element) => !isNullOrEmpty(element))
           .toList();
     } catch (e) {
@@ -71,11 +68,11 @@ class DatabaseMigrationService {
   ///
   /// Set verbose: true if you want to print out all migration logs
   Future runMigration(
-    Database database, {
+    dynamic database, {
     @required List<String> migrationFiles,
     bool verbose = false,
     String databaseVersionKey,
-      
+
     /// When a migration fails update the version number to the one that failed and continue.
     /// This should be used when you have migrations that might fail due to previous errors in
     /// your migration logic but you don't want that failing migration to keep running on every start.
@@ -116,8 +113,7 @@ class DatabaseMigrationService {
         var migrationData = await _assetReader.readFileFromBundle(file);
 
         // #5: Get the individual queries from the migration script
-        var migrationQueries =
-            getMigrationQueriesFromScript(migrationData, fileName: file);
+        var migrationQueries = getMigrationQueriesFromScript(migrationData, fileName: file);
 
         try {
           for (var query in migrationQueries) {
@@ -135,8 +131,7 @@ class DatabaseMigrationService {
           // #7: Update the database version
           _sharedPreferences.databaseVersion = migrationVersion;
         } catch (exception) {
-          print(
-              'DatabaseMigrationService - Migration from $databaseVersion to $migrationVersion didn\'t run.');
+          print('DatabaseMigrationService - Migration from $databaseVersion to $migrationVersion didn\'t run.');
 
           if (skipFailingMigration) {
             print(

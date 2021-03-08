@@ -11,9 +11,6 @@ dependencies:
     sdk: flutter
 
   # null safety
-  sqflite: ^2.0.0+2
-
-  # null safety
   flutter_secure_storage: ^4.0.0
 
   # null safety
