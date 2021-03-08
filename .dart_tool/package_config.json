@@ -302,13 +302,13 @@
       "languageVersion": "2.4"
     },
     {
-      "name": "sqflite_migration_service",
+      "name": "xulu_sql_migration_service",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-03-08T06:50:24.359836Z",
+  "generated": "2021-03-08T07:04:59.208761Z",
   "generator": "pub",
   "generatorVersion": "2.12.0"
 }

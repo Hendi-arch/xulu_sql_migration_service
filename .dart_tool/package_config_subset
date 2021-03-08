@@ -198,7 +198,7 @@ flutter_test
 2.12
 file:///Users/hendinoviansyah/PROJECTS/flutter/packages/flutter_test/
 file:///Users/hendinoviansyah/PROJECTS/flutter/packages/flutter_test/lib/
-sqflite_migration_service
+xulu_sql_migration_service
 2.7
 file:///Users/hendinoviansyah/PROJECTS/xulu_sql_migration_service/
 file:///Users/hendinoviansyah/PROJECTS/xulu_sql_migration_service/lib/

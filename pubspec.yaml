@@ -1,4 +1,4 @@
-name: sqflite_migration_service
+name: xulu_sql_migration_service
 
 # version package
 version: 1.0.4
